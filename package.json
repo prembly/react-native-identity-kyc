@@ -1,8 +1,8 @@
 {
   "name": "react-native-identity-kyc",
   "title": "React Native Identity Kyc",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "1.0.1",
+  "description": "React native wrapper for IdentityPass KYC checkout page",
   "main": "index.js",
   "files": [
     "README.md",
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-identity-kyc.git",
-    "baseUrl": "https://github.com/github_account/react-native-identity-kyc"
+    "url": "git+https://github.com/IDENTITYPASS/react-native-identity-kyc.git",
+    "baseUrl": "https://github.com/IDENTITYPASS/react-native-identity-kyc"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Olayiwola Kayode",
+    "email": "olayiwolakayode07@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",

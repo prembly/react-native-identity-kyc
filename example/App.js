@@ -25,7 +25,7 @@ export default class App extends Component {
         loaderColor={'red'}
         buttonText={'Verify'}
         showDefaultButton={true}
-        merchant_key="rvnn3ingodoed5ouy0z4:Cq_dXaVYS6F_R5HOQetA6HcLqKw" //text key
+        merchant_key="osdhcoshcodihso" //text key
         first_name="kayode"
         last_name="olayiwola"
         email="olayiuwolakayode07@gmail.com"

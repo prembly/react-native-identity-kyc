@@ -8,6 +8,31 @@
 
 `$ react-native link react-native-identity-kyc`
 
+
+
+
+## Requirement
+# Android
+
+// Add the following permission to your android "AndroidManifest.xml" file
+```xml
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.VIDEO_CAPTURE" />
+```
+
+# IOS
+
+// Add the following permission to your android "info.plist" file
+```plist
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>App needs access to photo lib for profile images</string>
+    <key>NSCameraUsageDescription</key>
+    <string>To capture profile photo please grant camera access</string>
+```
+
+
+
 ## Usage
 ```javascript
 import IdentityKyc from 'react-native-identity-kyc';

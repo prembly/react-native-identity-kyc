@@ -9,7 +9,13 @@
  */
 
 import React, {Component} from 'react';
-import {TouchableOpacity, StyleSheet, Text, View} from 'react-native';
+import {
+  TouchableOpacity,
+  PermissionsAndroid,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import IdentityKyc from 'react-native-identity-kyc';
 
 export default class App extends Component {
@@ -25,8 +31,10 @@ export default class App extends Component {
         loaderColor={'red'}
         buttonText={'Verify'}
         showDefaultButton={true}
-        merchant_key="osdhcoshcodihso" //text key
+        merchant_key="your public key" //text key
         first_name="kayode"
+        isTest={false}
+        userRef="12345643"
         last_name="olayiwola"
         email="olayiuwolakayode07@gmail.com"
         onCancel={data => {

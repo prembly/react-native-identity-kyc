@@ -28,6 +28,8 @@
   email:string,
   first_name:number,
   last_name:any,
+  userRef:any,
+  isTest:boolean,
   onCancel:Function,
   onVerified:Function,
   customButton?:any,
@@ -48,48 +50,7 @@
     useEffect(() => {
       
     }, []);
-  
-    const identityKycWebcontent = `   
-        <!DOCTYPE html>
-        <html lang="en">
-                <head>
-                        <meta charset="UTF-8">
-                        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                        <title>Identity Pass</title>
-                </head>
-                <body  onload="verifyKYC()" style="background-color:#fff;height:100vh ">
-                        <script src="https://js.myidentitypay.com/v1/inline/kyc.js"></script>
-                        <script type="text/javascript">
-                                window.onload = verifyKYC;
-                                function verifyKYC(){
-
-                                    var paymentEngine =  IdentityKYC.verify({
-                                        merchant_key: "${props.merchant_key}",
-                                        first_name: "${props.first_name}",
-                                        last_name: "${props.last_name}",
-                                        email: "${props.email}",
-                                        callback: function (response) {
-                                           console.log("callback Response", response); 
-                                           if(response.status =='success'){
-                                            var response_data = {event:'verified', data:response};
-                                            window.ReactNativeWebView.postMessage(JSON.stringify(response_data))
-                                           }
-                                           else if(response.code == 'E01'){
-                                            var response_data = {event:'closed'};
-                                            window.ReactNativeWebView.postMessage(JSON.stringify(response_data))
-                                           }
-                                           else{
-                                            var response_data = {event:'error',message:response.message};
-                                            window.ReactNativeWebView.postMessage(JSON.stringify(response_data))
-                                           }
-                                      },
-                                    })
-                                }
  
-                        </script> 
-                </body>
-        </html> 
-        `;
   
     const onWebMessageReceived = (data) => {
       var response = JSON.parse(data);
@@ -140,7 +101,19 @@
           <SafeAreaView style={[{ flex: 1}]}>
             <WebView
               style={[{ flex: 1 }]}
-              source={{ html: identityKycWebcontent }}
+              source={{ uri: "https://mobile-kyc.myidentitypass.com?merchantKey=" +
+              props.merchant_key +
+              "&firstName=" +
+              props.first_name +
+              "&lastName=" +
+              props.last_name +
+              "&email=" +
+              props.email +
+              "&user_ref=" +
+              props.userRef +
+              "&isTest=" +
+              props.isTest}}
+              
               onMessage={(e) => {
                 onWebMessageReceived(e.nativeEvent.data);
               }}
@@ -167,6 +140,7 @@
   IdentityKyc.defaultProps = {
     buttonText: "Verify My Identity",
     loaderColor: "purple",
+    isTest: false,
     showDefaultButton: true,
   };
 

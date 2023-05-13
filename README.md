@@ -49,6 +49,9 @@ import IdentityKyc from 'react-native-identity-kyc';
         onCancel={data => {
           console.log(data);
         }}
+        onVerified:{data => {
+          console.log(data);
+        }}
         onError={data => {
           console.log(data);
         }}
@@ -80,6 +83,9 @@ export default class App extends Component {
         last_name="olayiwola"
         email="olayiuwolakayode07@gmail.com"
         onCancel={data => {
+          console.log(data);
+        }}
+        onVerified:{data => {
           console.log(data);
         }}
         onError={data => {

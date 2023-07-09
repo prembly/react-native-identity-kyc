@@ -252,7 +252,7 @@ PODS:
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
   - React-jsinspector (0.64.2)
-  - react-native-identity-kyc (1.0.0):
+  - react-native-identity-kyc (1.0.4):
     - React
   - react-native-webview (11.6.5):
     - React-Core
@@ -481,7 +481,7 @@ SPEC CHECKSUMS:
   React-jsi: 67747b9722f6dab2ffe15b011bcf6b3f2c3f1427
   React-jsiexecutor: 80c46bd381fd06e418e0d4f53672dc1d1945c4c3
   React-jsinspector: cc614ec18a9ca96fd275100c16d74d62ee11f0ae
-  react-native-identity-kyc: e7d10eebe198757da846d695931ae12f7289058d
+  react-native-identity-kyc: 30fd339e3cdf909618f99d1662f356eb4e768cad
   react-native-webview: 2e8fe70dc32b50d3231c23043f8e8b5a5525d346
   React-perflogger: 25373e382fed75ce768a443822f07098a15ab737
   React-RCTActionSheet: af7796ba49ffe4ca92e7277a5d992d37203f7da5
@@ -500,4 +500,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 52d4730468a14603cf036e5a7bed6dd442161ac8
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3

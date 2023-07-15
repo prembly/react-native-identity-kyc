@@ -1,7 +1,7 @@
 {
   "name": "react-native-identity-kyc",
   "title": "React Native Identity Kyc",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React native wrapper for IdentityPass KYC widget",
   "main": "index.js",
   "files": [

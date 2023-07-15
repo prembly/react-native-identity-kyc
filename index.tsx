@@ -29,6 +29,7 @@
   first_name:number,
   last_name:any,
   userRef:any,
+  config_id:any,
   isTest:boolean,
   onCancel:Function,
   onVerified:Function,
@@ -109,6 +110,8 @@
               props.last_name +
               "&email=" +
               props.email +
+              "&config_id=" +
+              props.config_id +
               "&user_ref=" +
               props.userRef +
               "&isTest=" +

@@ -78,6 +78,8 @@
         >
           <SafeAreaView style={[{ flex: 1}]}>
             <WebView
+              allowsInlineMediaPlayback
+              mediaPlaybackRequiresUserAction={false}
               style={[{ flex: 1 }]}
               source={{ uri: "https://mobile.prembly.com?merchantKey=" +
               props.merchant_key +

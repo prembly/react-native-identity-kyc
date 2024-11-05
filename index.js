@@ -79,7 +79,7 @@
           <SafeAreaView style={[{ flex: 1}]}>
             <WebView
               style={[{ flex: 1 }]}
-              source={{ uri: "https://mobile.prembly.com?merchantKey=" +
+              source={{ uri: "https://mobile-kyc.myidentitypass.com/v2/?merchantKey=" +
               props.merchant_key +
               "&firstName=" +
               props.first_name +
@@ -91,8 +91,9 @@
               props.config_id +
               "&user_ref=" +
               props.userRef +
-              "&isTest="  +
-              props.isTest}}
+              "&isTest=" +
+              props.isTest }}
+              
               onMessage={(e) => {
                 onWebMessageReceived(e.nativeEvent.data);
               }}

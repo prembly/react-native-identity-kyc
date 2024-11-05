@@ -87,12 +87,13 @@
               props.last_name +
               "&email=" +
               props.email +
+              "&config_id=" +
+              props.config_id +
               "&user_ref=" +
               props.userRef +
               "&isTest=" +
-              props.isTest +
-              "&config_id=" +
-              props.config_id}}
+              props.isTest }}
+              
               onMessage={(e) => {
                 onWebMessageReceived(e.nativeEvent.data);
               }}

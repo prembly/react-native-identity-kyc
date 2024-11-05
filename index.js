@@ -79,7 +79,7 @@
           <SafeAreaView style={[{ flex: 1}]}>
             <WebView
               style={[{ flex: 1 }]}
-              source={{ uri: "https://mobile-kyc.myidentitypass.com?merchantKey=" +
+              source={{ uri: "https://mobile-kyc.myidentitypass.com/v2/?merchantKey=" +
               props.merchant_key +
               "&firstName=" +
               props.first_name +
@@ -90,7 +90,9 @@
               "&user_ref=" +
               props.userRef +
               "&isTest=" +
-              props.isTest}}
+              props.isTest +
+              "&config_id=" +
+              props.config_id}}
               onMessage={(e) => {
                 onWebMessageReceived(e.nativeEvent.data);
               }}

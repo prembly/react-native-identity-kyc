@@ -42,10 +42,12 @@ import IdentityKyc from 'react-native-identity-kyc';
         loaderColor={'red'}
         buttonText={'Verify'}
         showDefaultButton={true}
-        merchant_key="osdhcoshcodihso" //text key
+        merchant_key="PREMBLY-PRODUCT SDK KEY (PUBLIC KEY)" //text key
         first_name="kayode"
         last_name="olayiwola"
         email="olayiuwolakayode07@gmail.com"
+        is_test={false}
+        user_ref="123456789012345"
         onCancel={data => {
           console.log(data);
         }}
@@ -78,10 +80,12 @@ export default class App extends Component {
         loaderColor={'red'}
         buttonText={'Verify'}
         showDefaultButton={true}
-        merchant_key="osdhcoshcodihso" //text key
+        merchant_key="PREMBLY-PRODUCT SDK KEY (PUBLIC KEY)" //text key
         first_name="kayode"
         last_name="olayiwola"
         email="olayiuwolakayode07@gmail.com"
+        is_test={false}
+        user_ref="123456789012345"
         onCancel={data => {
           console.log(data);
         }}

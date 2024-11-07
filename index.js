@@ -87,6 +87,8 @@
               props.last_name +
               "&email=" +
               props.email +
+              "&config_id=" +
+              props.config_id +
               "&user_ref=" +
               props.user_ref +
               "&isTest=" +

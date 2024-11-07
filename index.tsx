@@ -29,6 +29,7 @@
   first_name:number,
   last_name:any,
   userRef:any,
+  config_id:any,
   isTest:boolean,
   onCancel:Function,
   onVerified:Function,
@@ -101,7 +102,7 @@
           <SafeAreaView style={[{ flex: 1}]}>
             <WebView
               style={[{ flex: 1 }]}
-              source={{ uri: "https://mobile-kyc.myidentitypass.com?merchantKey=" +
+              source={{ uri: "https://mobile.prembly.com?merchantKey=" +
               props.merchant_key +
               "&firstName=" +
               props.first_name +
@@ -109,6 +110,8 @@
               props.last_name +
               "&email=" +
               props.email +
+              "&config_id=" +
+              props.config_id +
               "&user_ref=" +
               props.userRef +
               "&isTest=" +

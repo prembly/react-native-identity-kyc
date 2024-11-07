@@ -88,9 +88,9 @@
               "&email=" +
               props.email +
               "&user_ref=" +
-              props.userRef +
+              props.user_ref +
               "&isTest=" +
-              props.isTest +
+              props.is_test +
               "&config_id=" +
               props.config_id}}
               onMessage={(e) => {

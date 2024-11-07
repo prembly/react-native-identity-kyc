@@ -79,7 +79,7 @@
           <SafeAreaView style={[{ flex: 1}]}>
             <WebView
               style={[{ flex: 1 }]}
-              source={{ uri: "https://mobile-kyc.myidentitypass.com/v2/?merchantKey=" +
+              source={{ uri: "https://mobile.prembly.com/v2/?merchantKey=" +
               props.merchant_key +
               "&firstName=" +
               props.first_name +

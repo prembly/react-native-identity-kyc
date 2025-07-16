@@ -47,6 +47,7 @@ import IdentityKyc from 'react-native-identity-kyc';
         last_name="olayiwola"
         email="olayiuwolakayode07@gmail.com"
         is_test={false}
+        config_id="YOUR CONFIGURATION ID (WIDGET CODE)"
         user_ref="123456789012345"
         onCancel={data => {
           console.log(data);
@@ -85,6 +86,7 @@ export default class App extends Component {
         last_name="olayiwola"
         email="olayiuwolakayode07@gmail.com"
         is_test={false}
+        config_id="YOUR CONFIGURATION ID (WIDGET CODE)"
         user_ref="123456789012345"
         onCancel={data => {
           console.log(data);

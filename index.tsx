@@ -102,6 +102,8 @@
           <SafeAreaView style={[{ flex: 1}]}>
             <WebView
               style={[{ flex: 1 }]}
+              allowsInlineMediaPlayback
+              mediaPlaybackRequiresUserAction={false}
               source={{ uri: "https://mobile.prembly.com?merchantKey=" +
               props.merchant_key +
               "&firstName=" +
@@ -116,7 +118,6 @@
               props.userRef +
               "&isTest=" +
               props.isTest}}
-              
               onMessage={(e) => {
                 onWebMessageReceived(e.nativeEvent.data);
               }}
